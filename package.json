@@ -1,0 +1,15 @@
+{
+  "name": "react-workspace",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/library",
+    "packages/app"
+  ],
+  "scripts": {
+    "build": "npm run build -w library && npm run build -w app",
+    "dev": "npm run build -w library && npm run dev -w app",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "storybook": "npm run storybook -w library"
+  }
+}

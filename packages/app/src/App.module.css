@@ -1,0 +1,25 @@
+.page {
+  max-width: 360px;
+  margin: 64px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-family: system-ui, sans-serif;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.divider {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}

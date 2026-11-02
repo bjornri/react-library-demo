@@ -1,0 +1,53 @@
+/*
+ * Design tokens. Plain global CSS (not a CSS module).
+ *
+ * Every component imports this file from its .tsx (`import "../../tokens.css"`), so the
+ * consumer's bundler includes it exactly once, whenever at least one component is used.
+ * Don't @import it from a .module.css: that copies it into every module.
+ *
+ * `:where(:root)` has zero specificity, so consumers can override any token with a plain
+ * `:root { --lib-color-primary: … }` (or on any element subtree) regardless of load order.
+ */
+:where(:root) {
+  /* Colors */
+  --lib-color-text: #000;
+  --lib-color-text-muted: #6b6b6b;
+  --lib-color-text-inverse: #fff;
+  --lib-color-surface: #fff;
+  --lib-color-surface-disabled: #f3f3f3;
+  --lib-color-border: #ccc;
+
+  --lib-color-primary: #000;
+  --lib-color-primary-hover: #333;
+  --lib-color-secondary: #eee;
+  --lib-color-secondary-hover: #ddd;
+  --lib-color-tertiary-hover: #f3f3f3;
+
+  --lib-color-focus: #276ef1;
+  --lib-color-danger: #c62828;
+  --lib-color-danger-surface: #fdecea;
+
+  /* Typography */
+  --lib-font-family: inherit;
+  --lib-font-size-xs: 12px;
+  --lib-font-size-sm: 13px;
+  --lib-font-size-md: 14px;
+  --lib-font-size-lg: 16px;
+  --lib-font-size-xl: 20px;
+  --lib-font-weight-medium: 600;
+  --lib-font-weight-bold: 700;
+
+  /* Spacing */
+  --lib-space-1: 4px;
+  --lib-space-2: 8px;
+  --lib-space-3: 12px;
+  --lib-space-4: 16px;
+  --lib-space-5: 20px;
+
+  /* Shape & motion */
+  --lib-radius: 8px;
+  --lib-control-height-sm: 32px;
+  --lib-control-height-md: 40px;
+  --lib-control-height-lg: 48px;
+  --lib-transition: 120ms ease;
+}

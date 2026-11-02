@@ -1,0 +1,52 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: var(--lib-font-family);
+}
+
+.label {
+  font-size: var(--lib-font-size-md);
+  font-weight: var(--lib-font-weight-medium);
+  color: var(--lib-color-text);
+}
+
+.input {
+  height: var(--lib-control-height-md);
+  padding: 0 var(--lib-space-3);
+  border: 1px solid var(--lib-color-border);
+  border-radius: var(--lib-radius);
+  background: var(--lib-color-surface);
+  font: inherit;
+  font-size: var(--lib-font-size-md);
+  color: var(--lib-color-text);
+}
+
+.input[data-focused] {
+  outline: 2px solid var(--lib-color-focus);
+  outline-offset: -1px;
+  border-color: transparent;
+}
+
+.input[data-invalid] {
+  border-color: var(--lib-color-danger);
+}
+
+.input[data-invalid][data-focused] {
+  outline-color: var(--lib-color-danger);
+}
+
+.input[data-disabled] {
+  background: var(--lib-color-surface-disabled);
+  cursor: not-allowed;
+}
+
+.hint {
+  font-size: var(--lib-font-size-xs);
+  color: var(--lib-color-text-muted);
+}
+
+.error {
+  font-size: var(--lib-font-size-xs);
+  color: var(--lib-color-danger);
+}

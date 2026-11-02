@@ -1,0 +1,19 @@
+/*
+ * Square, icon-only version of Button. Button's own classes provide the variant colors,
+ * focus ring and disabled state; this file only makes it square and sizes the icon.
+ * Button's CSS always loads before this file (IconButton imports Button first), so these
+ * rules win at equal specificity.
+ */
+.root {
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.small  { width: var(--lib-control-height-sm); }
+.medium { width: var(--lib-control-height-md); }
+.large  { width: var(--lib-control-height-lg); }
+
+.icon {
+  display: block;
+  flex-shrink: 0;
+}

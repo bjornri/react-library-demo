@@ -1,0 +1,4 @@
+/* Storybook-only page styles; not part of the library output. */
+body {
+  font-family: system-ui, sans-serif;
+}

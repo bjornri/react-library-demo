@@ -1,0 +1,23 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lib-space-4);
+  width: 100%;
+  font-family: var(--lib-font-family);
+}
+
+.title {
+  margin: 0;
+  font-size: var(--lib-font-size-xl);
+  font-weight: var(--lib-font-weight-bold);
+  color: var(--lib-color-text);
+}
+
+.formError {
+  margin: 0;
+  padding: 10px var(--lib-space-3);
+  border-radius: var(--lib-radius);
+  background: var(--lib-color-danger-surface);
+  color: var(--lib-color-danger);
+  font-size: var(--lib-font-size-md);
+}
